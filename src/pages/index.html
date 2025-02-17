@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First web page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html{
+    font-size: 14px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #444444;
+}
+
+#navbar {
+    padding: 8px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.description {
+    width: 50%;
+    padding-right: 8px;
+}
+
+.jobs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.team {
+    width: 50%;
+}
+
+#team_image {
+    border-radius: 1px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.job-role {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.apply {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: #3b82f6;
+}
+
+a:hover,
+a:focus {
+    color: #1E40AF;
+}
+
+#job-table {
+    width: 100%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+.jobs-row th {
+    border: 1px solid grey;
+    padding: 8px;
+    background-color: #BFDBFE;
+    text-align: center;
+}
+
+.jobs-row td {
+    border: 1px solid grey;
+    padding: 8px;
+}
+
+#job-table tr:nth-child(odd) {
+    background-color: ghostwhite;
+}
+
+/* #job-table th:nth-child(even), td:nth-child(even){
+    background-color: bisque;
+} */
+
+
+#application {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin: 16px 0;
+}
+.form-group textarea{
+    width: 80%;
+    font-family: Georgia, sans-serif;
+}
+
+#app-form label {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+#app-form input,select, textarea {
+    padding: 9px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.form-group input[type="checkbox"]{
+    height: 16px;
+    width: 16px;
+}
+
+.form-group input[type="submit"]{
+    background-color: #3B82F6;
+    color: white;
+    font-weight: 500;
+    padding: 16px;
+    cursor: pointer;
+}
+
+
+#footer {
+    background-color: ghostwhite;
+    margin-top: 32px;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer-links {
+    list-style: none;
+}
+
+#footer-links li {
+    display: inline;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.copyright {
+    color: #737373;
+    font-size: 0.857rem;
+} 
+
+/* @media screen and (min-width: 576px){
+    html{
+         font-size: 16px;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    html{
+        font-size: 20px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+    
+} */
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+        <img src="https://w7.pngwing.com/pngs/786/126/png-transparent-logo-contracting-photography-logo-symbol.png" alt="logo" height="50px">
+    </div>
+    
+    <h1>About Rushikesh</h1>
+    
+    <div class="about">
+    <div class="description">
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempora magnam odit facilis, natus, maiores doloremque maxime id aliquid culpa, incidunt ad sit provident! Magni distinctio non quis quae fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur optio expedita officiis, eaque debitis nobis ad quae unde illum nisi, impedit doloremque, asperiores iusto maiores. Quam, magnam quaerat? Iure, totam!
+    </p>
+    
+</div>
+    <div class="team">
+        <img src="./team image.jpg" id="team_image" alt="team-image" height="200px">
+    </div>
+</div>
+
+    <h2>Job Opportunities</h2>
+    <div class="jobs">
+        <table id="job-table">
+            <tr class="jobs-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted On</th>
+                <tr class="jobs-row">
+                    <th>city</th>
+                    <th>country </th>
+                </tr>
+            </tr>
+            <tr class="jobs-row">
+                <td>Software Engineer</td>
+                <td>San Francisco</td>
+                <td>CA</td>
+                <td>$120,000</td>
+                <td>January 30, 2025</td>
+            </tr>
+            <tr class="jobs-row">
+                <td>Data Analyst</td>
+                <td>New York</td>
+                <td>NY</td>
+                <td>$85,000</td>
+                <td>February 2, 2025</td>
+            </tr>
+            <tr class="jobs-row">
+                <td>UX Designer</td>
+                <td>Chicago</td>
+                <td>IL</td>
+                <td>$95,000</td>
+                <td>February 1, 2025</td>
+            </tr>
+            <tr class="jobs-row">
+                <td>Project Manager</td>
+                <td colspan="2">Remote</td>
+                <td>$100,000</td>
+                <td>January 25, 2025</td>
+            </tr>
+            
+        </table>
+    </div>
+    <!-- <div id="jobs">
+        <div>
+            <a class="apply" href="">Apply</a>
+            <h3 class="job-role">Backend developer</h1>
+                <span>pune, Maharashtra</span>
+        </div>
+        
+         <div>
+            <a class="apply" href="">Apply</a>
+             <h3 class="job-role">Frontend developer</h3>
+             <span>Remote</span>
+        </div>
+            
+        <div>
+            <a class="apply" href="mailto:rushigadeakr2535">Apply</a>
+            <h3 class="job-role">Data Scientist</h3>
+            <span class="loaction">pune, India</span> 
+        </div>
+    </div> -->
+
+
+    <div id="application">
+        <h2>Submit Your Application</h2>
+         
+        <form action="" id="app-form">
+            <div class="form-group">
+                <label for="name" >Full Name</label><br>
+                <input type="text" id="name" name="Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" name="emailAdd" id="emailId">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" name="phone" id="phone" required placeholder="+91 1122334455">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date Of Birth</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Position">Position Applied For</label><br>
+                
+                <select name="Position Applied" id="position">
+                    <option value="">Select position</option>
+                    <option value="Frontend developer">Frontend Developer</option>
+                    <option value="FullStack developer">Full Stack Developer</option>
+                    <option value="Backend developer">Backend Developer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume</label><br>
+                <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coverletter">Cover Letter</label><br>
+                <textarea name="coverletter" id="coverletter" rows="5"  placeholder="Explain what makes you suitable for the job."></textarea>
+
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Application">
+            </div>
+
+        </form>
+
+
+    </div>
+    <div id="footer">
+    <ul id="footer-links">
+        <li><a href="">Courses</a></li>
+        <li><a href="">Programs</a></li>
+        <li><a href="">Youtube</a></li>
+    </ul>
+    <span class="copyright">© 2025 India</span>
+</div>
+
+
+
+
+    
+</body>
+</html>

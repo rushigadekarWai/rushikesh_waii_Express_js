@@ -1,0 +1,176 @@
+html{
+    font-size: 14px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #444444;
+}
+
+#navbar {
+    padding: 8px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.description {
+    width: 50%;
+    padding-right: 8px;
+}
+
+.jobs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.team {
+    width: 50%;
+}
+
+#team_image {
+    border-radius: 1px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.job-role {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.apply {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: #3b82f6;
+}
+
+a:hover,
+a:focus {
+    color: #1E40AF;
+}
+
+#job-table {
+    width: 100%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+.jobs-row th {
+    border: 1px solid grey;
+    padding: 8px;
+    background-color: #BFDBFE;
+    text-align: center;
+}
+
+.jobs-row td {
+    border: 1px solid grey;
+    padding: 8px;
+}
+
+#job-table tr:nth-child(odd) {
+    background-color: ghostwhite;
+}
+
+/* #job-table th:nth-child(even), td:nth-child(even){
+    background-color: bisque;
+} */
+
+
+#application {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin: 16px 0;
+}
+.form-group textarea{
+    width: 80%;
+    font-family: Georgia, sans-serif;
+}
+
+#app-form label {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+#app-form input,select, textarea {
+    padding: 8px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.form-group input[type="checkbox"]{
+    height: 16px;
+    width: 16px;
+}
+
+.form-group input[type="submit"]{
+    background-color: #3B82F6;
+    color: white;
+    font-weight: 500;
+    padding: 16px;
+    cursor: pointer;
+}
+
+
+#footer {
+    background-color: ghostwhite;
+    margin-top: 32px;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer-links {
+    list-style: none;
+}
+
+#footer-links li {
+    display: inline;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.copyright {
+    color: #737373;
+    font-size: 0.857rem;
+} 
+
+/* @media screen and (min-width: 576px){
+    html{
+         font-size: 16px;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    html{
+        font-size: 20px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+    
+} */
